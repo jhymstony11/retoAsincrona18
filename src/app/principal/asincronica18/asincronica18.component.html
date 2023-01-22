@@ -1,0 +1,37 @@
+<body>
+  <section>
+    <h1 class="container mt-5 text-center" id="subtitulo2">Asincróna 18</h1>
+    <section class="container mt-5" id="form">
+      <article class="row border border-4">
+        <h2 class="mt-5 pb-5 text-center" id="formulario">Registro de Usuarios</h2>
+        <form class="form-group " (ngSubmit)="onSubmit()">
+  
+          <section class="form-group pb-3">
+            <label for="email">Email: </label>
+            <input type="text" class="form-control" placeholder="Ingrese su email" [(ngModel)]="datos.email" [email]="true" #email="ngModel" required name="email">
+            <section *ngIf="email.invalid && (email.dirty||email.touched)" class="alert alert-danger mt-2">
+              <section *ngIf="email.errors?.['required']">
+                El campo es requerido
+              </section>
+              <section *ngIf="email.errors?.['email']">
+                Ingrese su email
+              </section>
+            </section>
+          </section>
+    
+          <section class="">
+            <label for="" class="form-label">Password: </label>
+            <input type="password" class="form-control" placeholder="Ingrese su password" [(ngModel)]="datos.password" #password="ngModel" name="password">
+          </section>
+    
+          <section class="btn-group d-block mt-3 py-2 text-center pb-5 ">
+            <input type="submit" value="Registrate" class="btn btn-warning w-50">
+          </section>
+  
+        </form>
+      </article>
+    </section>
+  </section>
+</body>
+
+

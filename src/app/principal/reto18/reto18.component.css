@@ -1,0 +1,9 @@
+body{
+    background-image: url("../../../assets/FewWhimsicalCassowary-size_restricted.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

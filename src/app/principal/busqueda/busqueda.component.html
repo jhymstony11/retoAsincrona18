@@ -1,0 +1,32 @@
+<h1  class="text text-center" id="titulo">TAREA ASINCRONA 18 Y RETO 18</h1>
+<section class="container-sm">
+    <h1 class="text text-center" id="subtitulo1">Reto 18</h1>
+    <section class="form-group text-center">
+        <label for="id">Ingrese ID para la busqueda de USUARIO :</label>
+        <input type="text" #txtIdUser>
+        <input type="button" value="Buscar" (click)="getUserID(txtIdUser.value)" class="btn btn-info w-40">
+    </section>
+    <ng-container *ngIf="!vista">
+        <section *ngIf="!resultado" >
+            Usuario no encontrado!!
+        </section>
+        <ng-container *ngIf="resultado">
+            <table class="table table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="table-danger">ID</th>
+                        <th>Nombre</th>
+                        <th>Usuario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngIf="user">
+                        <td class="table-warning">{{ user.id }}</td>
+                        <td class="table-warning">{{ user.name }}</td>
+                        <td class="table-warning">{{ user.username }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-container>
+    </ng-container>
+</section>

@@ -1,0 +1,22 @@
+#subtitulo2{
+    color: bisque;
+    background-color: rgb(95, 95, 99);
+}
+
+#formulario{
+    color: rgb(2, 120, 156);
+}
+
+#form{
+    background-color: rgb(139, 206, 206);
+}
+
+body{
+    background-image: url("../../../assets/FewWhimsicalCassowary-size_restricted.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

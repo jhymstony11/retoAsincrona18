@@ -1,0 +1,28 @@
+<body>
+    <section >
+        <section class="container-sm">
+            <section class="mt-5">
+                <table class="table table-striped text-center border border-4 border-dark">
+                <thead>
+                    <tr class="bg bg-dark text text-light">
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Website</th>
+                        <th scope="col">Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of listado">
+                        <td class="table-danger">{{ item.id }}</td>
+                        <td class="table-warning">{{ item.name }}</td>
+                        <td class="table-warning">{{ item.email }}</td>
+                        <td class="table-warning">{{ item.website }}</td>
+                        <td class="table-warning">{{ item.phone }}</td>
+                    </tr>
+                </tbody>
+                </table>
+            </section>
+        </section>
+    </section>
+</body>
